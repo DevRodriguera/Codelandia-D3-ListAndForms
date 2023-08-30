@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 560px;
+    background-color: #D7D4FF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:8vw;
+    flex-wrap: wrap;
+
+}
+
+.header-title {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.header-title > h1{
+    font-family: 'Merriweather', serif;
+}
+
+.header-title > button {
+    height: 50px;
+    width: 155px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #6C63FF;
+    color: white;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-top: 60px;
+}
+
+#c1 > img {background-color: #FF6363;}
+#c2 > img {background-color: #63ECFF;}
+#c3 > img {background-color: #F363FF;}
+#c4 > img {background-color: #63FF73;}
+#c5 > img {background-color: #FFDD63;}
+#c6 > img {background-color: #6663FF;}
+
+.cards {
+    width: 290px;
+    height: 393px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    box-shadow:  5px 5px 30px #868686,
+                -5px -5px 30px #ffffff;
+                margin-top: 60px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.cards > img {
+    width: 100%;
+    height: 222px;
+    position: static;
+    padding-top: 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cards > h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cards > p {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+}
+
+@media screen {
+    
+}
