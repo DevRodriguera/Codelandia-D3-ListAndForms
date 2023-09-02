@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
-@media screen and (min-width:922px) {
     * {
         padding: 0;
         margin: 0;
         font-family: 'Lato', sans-serif;
     }
+
+    body {
+        width: 100% auto;
+    }
     
     header {
-        height: 560px;
+        width: 100% auto;
         background: linear-gradient(180deg, rgba(215, 212, 255, 1) 70%,rgb(255, 255, 255));
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10vw;
         flex-wrap: wrap;
     }
     
@@ -24,11 +26,11 @@
         row-gap: 20px;
     }
     
-    .header-title > h1{
+    .header-title > h1 {
         font-family: 'Merriweather', serif;
     }
     
-    .header-title > button {
+    .button-sm {
         height: 50px;
         width: 155px;
         border-radius: 5px;
@@ -39,8 +41,22 @@
         font-weight: 700;
         font-size: 20px;
     }
-    
+
+    .button-lg {
+        height: 50px;
+        width: 50%;
+        border-radius: 5px;
+        border-style: none;
+        background-color: #6C63FF;
+        color: white;
+        font-family: 'Lato';
+        font-weight: 700;
+        font-size: 20px;
+    }
+
     main {
+        border: #555555 solid;
+        width: 100% auto;
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
@@ -88,10 +104,62 @@
         color: #555555;
         padding-left: 40px;
     }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 60px;
+        margin-top: 86px;
+        padding-bottom: 79px;
+        background: linear-gradient(360deg, rgb(187, 182, 255) 80%,rgb(255, 255, 255));
+    }
+
+    footer > h1 {
+        font-family: 'Merriweather', serif;
+    }
+
+    footer > form {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 15px;
+    }
+
+    form > input {
+        height: 65px;
+        border-radius: 6px;
+        background-color: #FFF;
+        border-style: none;
+    }
+    textarea {
+        border-style: none;
+        border-radius: 6px;
+        margin-bottom: 15px;
+    }
+    
+@media screen and (min-width:922px) {
+
+    header {
+        height: 560px;
+        gap: 20vw;
+    }
+
+    .img-header-lg {
+        width: 500px;
+    }
 }
 
+@media screen and (min-width: 375px){
+    header {
+        height: 800px;
+    }
 
+    .header-title {
+        margin-bottom: -180px;
+    }
 
-@media screen {
-    
+    header > img {
+        width: 90vw;
+    }
 }
