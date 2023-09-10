@@ -5,10 +5,6 @@
         margin: 0;
         font-family: 'Lato', sans-serif;
     }
-
-    body {
-        width: 100% auto;
-    }
     
     header {
         width: 100% auto;
@@ -29,38 +25,31 @@
     .header-title > h1 {
         font-family: 'Merriweather', serif;
     }
+
+    button{
+        height: 50px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 5px 0px rgba(23, 23, 23, 0.10);
+        border-style: none;
+        color: white; 
+        font-weight: 700;
+        font-size: 20px;
+        font-family: 'Lato';
+        background-color: #6C63FF;
+    }
     
     .button-sm {
-        height: 50px;
         width: 155px;
-        border-radius: 5px;
-        border-style: none;
-        background-color: #6C63FF;
-        color: white;
-        font-family: 'Lato';
-        font-weight: 700;
-        font-size: 20px;
-    }
-
-    .button-lg {
-        height: 50px;
-        width: 50%;
-        border-radius: 5px;
-        border-style: none;
-        background-color: #6C63FF;
-        color: white;
-        font-family: 'Lato';
-        font-weight: 700;
-        font-size: 20px;
     }
 
     main {
-        border: #555555 solid;
-        width: 100% auto;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+        width: 100%;
         display: flex;
-        justify-content: center;
         flex-flow: row wrap;
-        column-gap: 100px;
+        justify-content: center;
+        gap: 5vw 16vh;
     }
     
     #c1 > img {background-color: #FF6363;}
@@ -79,7 +68,6 @@
         row-gap: 25px;
         box-shadow:  5px 5px 30px #868686,
                     -5px -5px 30px #ffffff;
-        margin-top: 60px;
         border-radius: 5px;
     }
     
@@ -118,20 +106,26 @@
 
     footer > h1 {
         font-family: 'Merriweather', serif;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
-    footer > form {
+    form {
+        margin-top: 3vw;
         display: flex;
         flex-flow: column wrap;
         gap: 15px;
     }
 
-    form > input {
+    input {
         height: 65px;
         border-radius: 6px;
         background-color: #FFF;
         border-style: none;
     }
+
     textarea {
         border-style: none;
         border-radius: 6px;
@@ -148,9 +142,13 @@
     .img-header-lg {
         width: 500px;
     }
+
+    .button-lg{
+        width: 30vw;
+    }
 }
 
-@media screen and (min-width: 375px){
+@media screen and (max-width: 600px){
     header {
         height: 800px;
     }
@@ -160,6 +158,10 @@
     }
 
     header > img {
+        width: 90vw;
+    }
+
+    .button-lg{
         width: 90vw;
     }
 }
